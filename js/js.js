@@ -66,8 +66,8 @@
 //напиши скріпт вибора вартості готелю по кількості  зірок
 //1 - 20$, 2 - 30$, 3 - 50$, 4 - 70$, 5 - 120$
 
-const stars = 7;
-let price;
+// const stars = 7;
+// let price;
 
 // if (stars === 1) {
 //   price = 20;
@@ -109,3 +109,85 @@ let price;
 
 // console.log(price);
 
+// const stars = 6;
+// let price;
+
+// if (stars === 1 || stars === 2) {
+//   price = 20;
+// } else if (stars === 3 || stars === 4) {
+//   price = 50;
+// } else if (stars === 5) {
+//   price = 100;
+// } else {
+//   console.log("NEMAETAKOGO");
+// }
+
+// console.log(price);
+
+// switch------------
+
+// const stars = 3;
+// let price;
+
+// switch (stars) {
+//   case 1:
+//   case 2:
+//     price = 20;
+//     break;
+
+//   case 3:
+//   case 4:
+//     price = 50;
+//     break;
+
+//   case 5:
+//     price = 100;
+//     break;
+
+//   default:
+//     console.log("NETYTAKOGOBLAT");
+// }
+
+// console.log(price);
+
+// ----------------------
+
+// Напиши скріпт вибора опції достаки товара
+// Опція зберігається в змінній option: 1-самовивіз, 2- курєр, 3- пошта
+// в Змінну message записати смс в залежності від опції
+// - 'Ви зможете забрати товар завтра'
+// - 'Курєр доставить заказ завтра  з 9 до 18'
+// - 'Посилка буде сьогодні'
+// - 'Вам зателефонує менеджер'
+
+// const option = 4;
+// let message = "";
+
+// switch (option) {
+//   case 1:
+//     message = "Ви зможете забрати товар завтра";
+//     break;
+//   case 2:
+//     message = "Курєр доставить заказ завтра  з 9 до 18";
+//     break;
+//   case 3:
+//     message = "Посилка буде сьогодні";
+//     break;
+
+//   default:
+//     console.log("Вам зателефонує менеджер");
+// }
+
+// console.log(message);
+
+// SWITCH тільки тоді  коли ===
+// IF ELSE  > <
+
+// ЦИКЛ ---------------------
+
+// for (ініціалізація; условія; пост - вираженія)
+
+for (let i = 0; i < 5; i += 1) {
+  console.log(i);
+}
+console.log("qweqweqwe");

@@ -192,12 +192,89 @@
 // }
 // console.log("FINISH");
 
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  if (message.includes("sale") || message.includes("spam")) {
-    return true;
-  }
-  // Change code above this line
-  return false;
-}
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   if (message.includes("sale") || message.includes("spam")) {
+//     return true;
+//   }
+//   // Change code above this line
+//   return false;
+// }
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   let messageArray = message.split(" ");
+//   console.log(messageArray);
+
+//   return messageArray.length * pricePerWord;
+//   console.log(messageArray);
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+
+// ---------------------------
+// перебрати масив
+// зробити змінну total до цикла
+// кожному елементу додати до total
+
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+// let total = 0;
+
+// for (let i = 0; i < cart.length; i += 1) {
+//   console.log(cart[i]);
+
+//   total += cart[i];
+// }
+
+// console.log(total);
+
+// приклад з for of
+
+// for (const value of cart) {
+//   total += value;
+// }
+
+// console.log(total);
+
+// ------------------------------
+
+// написати скріпт який підраховую суму всіх парних чисел в масиві
+
+// зміна total
+// перебрати масив
+// провірити елементи на парність
+// якщо парні + до total
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
+
+// let total = 0;
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(numbers[i]);
+
+//   if (numbers[i] % 2 === 0) {
+//     console.log("PARNE");
+
+//     total += numbers[i];
+//   }
+// }
+
+// console.log(total);
+
+// ---------------------------
+//  скрипт пошуку логіна
+// якщо логіна немає. смс логін не знайдний
+// якщо є . логін знайдений
+
+// const logins = ["qweqwe", "qweqweqwe", "qwe", "qweqweqweqwe"];
+// const loginToFind = "qwe";
+// let message = "";
+
+// for (let i = 0; i < logins.length; i += 1) {
+//   const login = logins[i];
+
+//   if (login === loginToFind) {
+//     message = `USER ${loginToFind} ZNAIDENUI.`;
+//     break;
+//   }
+//   message = `USER ${loginToFind} NE ZNAIDENUI.`;
+// }
+// console.log(message);

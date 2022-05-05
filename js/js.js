@@ -187,7 +187,17 @@
 
 // for (ініціалізація; условія; пост - вираженія)
 
-for (let i = 0; i < 5; i += 1) {
-  console.log(i);
+// for (let i = 5; i < 10; i += 1) {
+//   console.log(i);
+// }
+// console.log("FINISH");
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  if (message.includes("sale") || message.includes("spam")) {
+    return true;
+  }
+  // Change code above this line
+  return false;
 }
-console.log("qweqweqwe");

@@ -278,3 +278,190 @@
 //   message = `USER ${loginToFind} NE ZNAIDENUI.`;
 // }
 // console.log(message);
+
+// =========================
+// Напиши скріпт пошуку самого меншого числа в масиві
+// число унікальне (не повторюється)
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19, 1];
+
+// let smallsNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < smallsNumber) {
+//     smallsNumber = number;
+//   }
+// }
+
+// console.log(smallsNumber);
+
+// =============================
+// Напиши скріпт пошуку самого більшого числа в масиві
+// число унікальне (не повторюється)
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19, 1, 133];
+// let bigsNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number > bigsNumber) {
+//     bigsNumber = number;
+//   }
+// }
+// console.log(bigsNumber);
+
+// ==================================
+// взяти масив і вшити його в одну строку, через кому
+// спочатку через for
+// потім через join
+
+//  FOR
+
+// const friends = ["Kiwi", "Mango", "Apple", "Srawberry"];
+// let string = "";
+
+// for (const friend of friends) { // додає коми
+//   string += friend + ",";
+// }
+
+// string = string.slice(0, string.length - 1); // обрізає останню кому
+
+// console.log(string);
+
+// JOIN
+
+// const friends = ["Kiwi", "Mango", "Apple", "Srawberry"];
+// const string = friends.join(",");
+
+// console.log(string);
+
+//==============================
+// напиши скріпт який заміняє регістр кожного символа в строці на протилежний
+// наприклад: строка 'JavaScript' на виході 'jAVAsCRIPT'
+
+// const string = "JavaScript";
+// const letters = string.split("");
+// let invertedString = "";
+// console.log(letters);
+
+// for (const letter of letters) {
+//   console.log(letter);
+
+//   if (letter === letter.toLowerCase()) {
+//     console.log("В нижньому регістрі!!! - ", letter);
+
+//     invertedString += letter.toUpperCase();
+//   } else {
+//     console.log("В верхньому регістрі!!! - ", letter);
+
+//     invertedString += letter.toLowerCase();
+//   }
+// }
+
+// console.log(invertedString);
+
+// КОРОТША ВЕРСІЯ
+
+// const string = "JavaScript";
+// const letters = string.split("");
+// let invertedString = "";
+// console.log(letters);
+
+// for (const letter of letters) {
+//   console.log(letter);
+
+//   invertedString +=
+//     letter === letter.toLowerCase()
+//       ? letter.toUpperCase()
+//       : letter.toLowerCase();
+// }
+
+// console.log(invertedString);
+
+// ==============================
+// Робимо slug в URL з назви статті
+// Заголовок тільки з букв і пробілів
+
+// нормалізуємо строку
+// зшиваємо в строку с (разделитилями)
+
+// const title = "Top 10 benefits of React framework";
+
+// console.log(title);
+
+// const normalizedTitle = title.toLocaleLowerCase();
+
+// console.log(normalizedTitle);
+
+// const words = normalizedTitle.split(" ");
+
+// console.log(words);
+
+// const slug = words.join("-");
+
+// console.log(slug);
+
+// КОРОТША ВЕРСІЯ
+
+// const slug = title.toLocaleLowerCase().split(" ").join("-");
+
+// console.log(slug);
+
+// ============================================
+// напиши скріпт який рахує суму елементів двох масивів
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
+
+// const numbers = array1.concat(array2);
+// console.log(numbers);
+
+// for (const number of numbers) {
+//   total += number;
+// }
+
+// console.log(total);
+
+// ========================================
+// SPLICE()
+
+// const cards = [
+//   "Карточка-1",
+//   "Карточка-2",
+//   "Карточка-3",
+//   "Карточка-4",
+//   "Карточка-5",
+// ];
+
+// console.log(cards);
+
+// ВИДАЛЕННЯ елементів по індексу
+
+// const cardToRemowe = "Карточка-5";
+// const index = cards.indexOf(cardToRemowe);
+
+// console.log(index);
+
+// cards.splice(index, 1); //видаляє карточку
+
+// console.log(cards);
+
+// ДОДАЄ елементи по індексу
+
+// const cardToInsert = "Карточка-6";
+// const index = 6;
+
+// cards.splice(index, 0, cardToInsert);
+
+// console.log(cards);
+
+//ОБНОВЛЯЄ(ЗАМІНЯЄ)
+
+// const cardToUpdate = "Карточка-4";
+// const index = cards.indexOf(cardToUpdate);
+
+// console.log(index);
+
+// cards.splice(index, 1, "ОБНОВЛЕНА КАРТКА-4");
+
+// console.log(cards);

@@ -387,3 +387,243 @@
 // }
 
 // console.log(b);
+
+// ========================================
+// Модуль-1 Ветвления и цикли
+// IF
+
+//  варість готелю по кількості зірок
+// 1 - 20$, 2 - 30$, 3 - 50$, 4 - 70$, 5 - 120$.
+
+// const stars = 5;
+// let price;
+
+// if (stars === 1) {
+//   price = 20;
+// } else if (stars === 2) {
+//   price = 30;
+// } else if (stars === 3) {
+//   price = 50;
+// } else if (stars === 4) {
+//   price = 70;
+// } else if (stars === 5) {
+//   price = 120;
+// } else {
+//   console.log("TAKOI KILKOSTI ZIROK NEMAE");
+// }
+
+// console.log(price);
+
+//  SWITCH
+
+// switch (stars) {
+//   case 1:
+//     price = 20;
+//     break;
+//   case 2:
+//     price = 30;
+//     break;
+//   case 3:
+//     price = 50;
+//     break;
+//   case 4:
+//     price = 70;
+//     break;
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log("TAKOI KILKOSTI ZIROK NEMAE");
+// }
+
+// console.log(price);
+
+// ======================================
+// вибір вартостіі  готелю в кількості зірок
+// 1,2  - 20$, 3,4 - 30$, 5 - 120$
+
+// const stars = 5;
+// let price;
+
+// if (stars === 1 || stars === 2) {
+//   price = 20;
+// } else if (stars === 3 || stars === 4) {
+//   price = 30;
+// } else if (stars === 5) {
+//   price = 120;
+// } else {
+//   console.log("TAKOI KILKOSTI ZIROK NEMAE");
+// }
+
+// console.log(price);
+
+// switch
+
+// switch (stars) {
+//   case 1:
+//   case 2:
+//     price = 20;
+//     break;
+//   case 3:
+//   case 4:
+//     price = 30;
+//     break;
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log("TAKOI KILKOSTI ZIROK NEMAE");
+// }
+
+// console.log(price);
+
+// SWITCH це тільки на РАВЕНСТВО
+// IF ELSE  > < + - % * ==
+
+// --------------------------
+// вибір опції доставки  товар
+// вони зберігаються в змінних 1 - самовивіз, 2 - курєр, 3 - пошта
+//  в змінну message записати смс в залежності від опції
+// - 'Ви зможете забрати товар завтра з 12 години в нашому офісі'
+// - 'Курєр доставить замовлення завтра з 9 до 18'
+// - 'Посилка буде відправлена сьогодні  '
+// - 'Вам зателефонує менеджер'
+
+// Алгоритм
+// 1. Зробити змінні
+// 2. зробити switch 1,2,3
+// 3. в кожному кейсі зробити смс
+// 4. зробити лог message
+
+// const option = 4;
+// let message = "";
+
+// switch (option) {
+//   case 1:
+//     message = "Ви зможете забрати товар завтра з 12 години в нашому офісі";
+//     break;
+//   case 2:
+//     message = "Курєр доставить замовлення завтра з 9 до 18";
+//     break;
+//   case 3:
+//     message = "Посилка буде відправлена сьогодні";
+//     break;
+
+//   default:
+//     console.log("Вам зателефонує менеджер");
+// }
+
+// console.log(message);
+
+// ================================
+// ЦИКЛ FOR
+// for (инициализация; условие; пост - виражение){
+// тело цикла
+// }
+
+// for (let i = 0; i <= 100; i += 5) {
+//   console.log(i);
+// }
+// console.log("false");
+
+// Pre and Post-increment-------------------(ЦЕ ЗЛО)
+
+// let a = 10;
+// const b = a++;
+
+// console.log(a); // додає 1 до а буде 11 але після того як виконається b
+// console.log(b);
+
+// -----------------------------
+// напиши скріпт який  підрахує загальну суму зарплати
+// кількість працівників в змінній employees
+// зп кожного робітника випадкове число від 500 до 5000
+// записати суму в змінну totalSalary і вивести в консоль
+
+//алгоритм
+
+// 1. зробити вари
+// 2. перебрати робітників
+// 3. згенерувати випадкове зп
+// 4. добавити до тоталу
+// 5. вивести лог
+
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const employees = 3;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= employees; i += 1) {
+//   const salary = Math.round(
+//     Math.random() * (maxSalary + minSalary) + minSalary
+//   );
+//   console.log(`zp pracivnuka nomer ${i} - ${salary}`);
+
+//   totalSalary += salary;
+// }
+// console.log("totalSalary:", totalSalary);// підраховує  зп кожного працівника і загальну  суму
+
+// --------------------------------
+// скріпт який підраховує суму  всіх парних чисел
+// які  входять в діапазон в змінних від мін до макс
+
+// остаток ділення console.log(10 % 3 = 1, 7 % 3 = 1, 5 % 3 = 2)
+
+// фор от мін до макс
+// остаток ділення
+// пишемо в суму
+
+// const min = 6;
+// const max = 13;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//   console.log(i);
+
+//   if (i % 2 === 0) {
+//     console.log("parne: ", i); // вибирає парні числа які діляться на 2 без остатку
+
+//     total += i; // дає загальну суму
+//   }
+// }
+
+// console.log("total: ", total);
+
+// 2 модуль 23 задача-----------------------
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filterNew = [];
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filterNew.push(number);
+//     }
+//   }
+
+//   return filterNew;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// модуль 2 задача 25------------------------------
+
+// методи  перебирання масиву:
+//
+
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  let newElements = [];
+
+  for (const elementArray of array1) {
+    if (array2.includes(elementArray)) {
+      newElements.push(elementArray);
+    }
+  }
+
+  return newElements;
+}
+
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));

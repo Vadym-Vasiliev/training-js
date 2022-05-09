@@ -11,7 +11,7 @@
 // const totalPrice = 200.74; // число
 // const userNAme = 'Vadym'; // строка
 // const message = 'Dobro pojalovat';// строка
-// const isOpen = true;// boolien true (да)
+// const isOpen = true;// Boolien true (да)
 // const shouldConfirm = false; // boolien false (ні)
 
 // const x = 5;

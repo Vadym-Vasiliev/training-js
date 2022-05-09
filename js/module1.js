@@ -59,3 +59,37 @@
 
 // const bmi = parseFloat(weight) / Math.pow(parseFloat(height), 2);
 // console.log(bmi.toFixed(1));
+
+//-----------------------
+// const incomingValue = null;
+// const defaultValue = 10;
+
+// let value;
+
+// if(incomingValue){
+//   value = incomingValue;
+// } else {
+//   value = defaultValue;
+// }
+
+// коротше
+
+// const value = incomingValue ?? defaultValue;
+// console.log(value);
+
+// скріпт який переведе. значення totalMinutes(кількість хв)  рядок у форматі годин і хв
+
+// 70 покаже 1:10
+// 450 покаже 7:30
+// 1440 покаже 24:00
+
+// const totalMinutes = 1440;
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+
+// const parsedHours = String(hours).padStart(2, 0);
+// const parsedMinutes = String(minutes).padStart(2, 0);
+
+// const result = `${parsedHours}:${parsedMinutes}`;
+
+// console.log(result);

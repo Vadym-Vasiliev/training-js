@@ -613,17 +613,32 @@
 // методи  перебирання масиву:
 //
 
-function getCommonElements(array1, array2) {
-  // Change code below this line
-  let newElements = [];
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let newElements = [];
 
-  for (const elementArray of array1) {
-    if (array2.includes(elementArray)) {
-      newElements.push(elementArray);
-    }
-  }
+//   for (const elementArray of array1) {
+//     if (array2.includes(elementArray)) {
+//       newElements.push(elementArray);
+//     }
+//   }
 
-  return newElements;
-}
+//   return newElements;
+// }
 
-console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// модуль 2 задача 29-------------------
+
+// function getEvenNumbers(start, end) {
+//
+//   let getEven = [];
+
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       getEven.push(i)
+//     }
+//   }
+
+//   return getEven;
+
+//
+// }

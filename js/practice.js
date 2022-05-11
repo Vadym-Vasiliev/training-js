@@ -237,3 +237,167 @@
 //   total += counter;
 // } while (counter <= 10);
 // console.log(total);
+
+//===============================
+
+////Завдання 1. Напишіть функцію copyArr(arr), яка копіює масив, не змінюючи оригінал.
+
+// var vegetables = ["Капуста", "Репа", "Редиска", "Морковка"];
+
+// function arrayClone(arr) {
+//   return arr.slice(); // один метод====
+
+//   let newArr = []; // другий спосіб====
+//   for (let i = 0; i < arr.length; i += 1) {
+//     newArr.push(arr[i]);
+//   }
+//   return newArr;
+
+//   let newArr = []; // третій спосіб====
+//   newArr = [].concat(arr);
+
+//   return newArr;
+// }
+// console.log(arrayClone(vegetables) === vegetables);
+// console.log(arrayClone(vegetables));
+
+//==================================
+//// Завдання 2. Напишіть код, який перетворює та поєднує всі елементи масиву в одне рядкове
+// значення. Елементи масиву будуть розділені комою. Отримайте результат двома різними
+// методами.
+
+// var vegetables = ["Капуста", "Репа", "Редиска", "Морковка"];
+
+// let string = vegetables.join(","); //перший спосіб
+
+// let string = "";
+// for (let i = 0; i < vegetables.length; i += 1) {
+//   string += vegetables[i] + (i === vegetables.length - 1 ? "." : ", ");
+// }
+
+// console.log(string);
+
+//==========================
+//// Завдання 3. Користувач вводить багатозначне число через promt. Напишіть функцію colonOdd(num),
+// яка приймає число num як аргумент і вставляє двокрапку (:) між двома непарними числами.
+// Наприклад, якщо вводиться число 55639217, то вихід має бути 5:563:921:7.
+
+// function colonOdd(num) {
+//   let strNum = num.toString();
+//   let result = "";
+
+//   for (let i = 0; i < strNum.length - 1; i += 1) {
+//     result += strNum[i];
+//     if (Number(strNum[i]) % 2 !== 0 && Number(strNum[i + 1]) % 2 !== 0) {
+//       result += ":";
+//     }
+//   }
+//   return result + strNum[strNum.length - 1];
+// }
+
+// console.log(colonOdd(14570999));
+
+//==============================
+
+//// Завдання 4. Напишіть функцію, яка приймає
+// рядок як аргумент та замінює регістр кожного символу на протилежний.
+// Наприклад, якщо вводиться «КаЖдЫй ОхОтНиК», то на виході повинен бути масив "кАжДыЙ оХоТнИк".
+
+// function changeCase(arg) {
+//   let newString = "";
+
+//   for (let i = 0; i < arg.length; i += 1) {
+//     const ell = arg[i];
+//     if (ell === ell.toUpperCase()) {
+//       newString += ell.toLowerCase();
+//     } else {
+//       newString += ell.toUpperCase();
+//     }
+//   }
+//   return newString;
+// }
+
+// console.log(changeCase("кАжДыЙ оХоТнИк"));
+
+//=============================
+
+//// Завдання 5. Напишіть функцію removeDuplicates(arr), яка повертає масив, у якому видалено
+// повторювані елементи з масиву arr (ігноруйте чутливість до регістру).
+
+// var arr = [
+//   "php",
+//   "php",
+//   "css",
+//   "css",
+//   "script",
+//   "script",
+//   "html",
+//   "html",
+//   "java",
+// ];
+// function removeDuplicates(arr) {
+//   let newArray = [];
+
+//   for (const elementArr of arr) {
+//     if (!newArray.includes(elementArr)) {
+//       newArray.push(elementArr);
+//     }
+//   }
+//   return newArray;
+// }
+
+//второй варіант
+
+// function removeDuplicates(arr) { //Сет не дублює елементи(він їх не приймає)
+//   return [...new Set(arr)];
+// }
+
+// console.log(removeDuplicates(arr));
+
+//==========================
+//// Завдання 6. Напишіть код, який створює масив елементів, що становлять суму
+// відповідних елементів заданих масивів.
+
+// var arr1 = [1, 2, 3, 4, 5];
+// var arr2 = [4, 5, 6];
+
+// const newArr = [];
+// const largerArr = arr1.length >= arr2.length ? arr1 : arr2;
+
+// const smallerArr = arr1.length < arr2.length ? arr1 : arr2;
+
+// console.log(largerArr);
+// console.log(smallerArr);
+// let i = 0;
+
+// for (const elementArr of largerArr) {
+//   if (smallerArr[i]) {
+//     let sum = elementArr + smallerArr[i];
+//     newArr.push(sum);
+//   } else {
+//     newArr.push(elementArr);
+//   }
+
+//   i += 1;
+// }
+// console.log(newArr);
+
+//==============================
+//// Даний масив із числами.
+// Дізнайтеся скільки елементів з початку масиву треба скласти, щоб у сумі вийшло більше 10-ти.
+
+// const number = [2, 3, 2, 5, 7, 1];
+
+// console.log(number);
+
+// let num = 0;
+
+// for (let i = 0; i < number.length; i += 1) {
+//   num += number[i];
+//   if (num > 10) {
+//     console.log(i + 1);
+//     break;
+//   }
+// }
+
+// console.log(num);

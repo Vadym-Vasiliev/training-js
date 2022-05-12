@@ -401,3 +401,65 @@
 // }
 
 // console.log(num);
+
+// ===========================
+//// Написати функцію, якою передаємо ім'я, і ​​вона повертає вітання залежно від часу
+// Доби (Доброго ранку\день\вечір\ночі Іван)
+
+// function helloUser(name) {
+//   let date = new Date();
+//   let output = date.getHours();
+//   let time = "Дорої ночі, ";
+//   console.log(output);
+
+//   if (output < 12 && output > 6) {
+//     time = "Дорої ранку, ";
+//   } else if (output >= 12 && output <= 16) {
+//     time = "Дорий дунь, ";
+//   } else if (output > 16 && output < 23) {
+//     time = "Дорий вечір, ";
+//   }
+//   alert(`${time}${name}`);
+// }
+// const name = prompt("Яке у Вас імя?");
+// helloUser(name);
+
+// ==========================
+////Напишіть функцію JavaScript, яка перевертає число.
+
+// function reverse_a_number(n) {
+//   const rev = String(n).split("").reverse();
+
+//   console.log(rev);
+//   return rev.join(" ");
+// }
+// console.log(reverse_a_number(258961)); // 169852
+
+// дргугий спосіб
+
+// function reverse_a_number(n) { //ПІД ПИТАННЯМ ?????????????
+//   const rev = String(n).split(" ");
+//   console.log(rev);
+
+//   const newArr = [];
+//   for (let i = rev.length - 1; i >= 0; i -= 1) {
+//     const element = rev[i];
+//     console.log(element);
+//     newArr.push(element);
+//   }
+//   return newArr.join("");
+// }
+
+// console.log(reverse_a_number(258961)); // 169852
+
+////Напишіть функцію JavaScript, яка перевіряє, чи переданий рядок є паліндромом?
+//Паліндром - це слово, фраза чи послідовність, які читаються так само, як уперед,
+//назад, наприклад, level.
+// function check_Palindrome(string) {
+//   const newStr = string.split("").reverse().join("");
+//   return newStr === string;
+// }
+
+// console.log(check_Palindrome("level")); // true
+// console.log(check_Palindrome("topot")); // true
+// console.log(check_Palindrome("that")); // false

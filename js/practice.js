@@ -463,3 +463,92 @@
 // console.log(check_Palindrome("level")); // true
 // console.log(check_Palindrome("topot")); // true
 // console.log(check_Palindrome("that")); // false
+
+//MODULE 3 16.05.22
+
+//// Даний масив із числами. Перевірте, чи є в ньому два однакові числа поспіль.
+// Якщо є - виведіть true, а якщо ні - виведіть false.
+//
+
+// const number = [2, 3, 77, 5, 5];
+// function validateArray(array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] === array[i + 1]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(validateArray(number));
+
+//// Даний масив із числами.
+// Дізнайтеся скільки елементів з початку масиву треба скласти, щоб у сумі вийшло більше 10-ти.
+
+// const number = [2, 3, 2, 5, 7, 1];
+
+// function summa(elements = [], sum = 10) {
+//   let total = 0;
+//   for (let i = 0; i < elements.length; i += 1) {
+//     total += elements[i];
+
+//     if (total > sum) {
+//       return i + 1;
+//     }
+//   }
+//   console.log(elements, sum);
+// }
+// console.log(summa(number, 10));
+// summa(number, 10);
+
+////Використовуючи метод splice(), замініть у масиві, що складається з декількох рядкових
+//змінних, що складаються в одну речення, вказану користувачем слово.
+//Наприклад, у нас є такий масив: const poem = ["Мороз","и", "солнце", "день","чудесный"];
+//Вам необхідно запитати у користувача номер слова, яке потрібно видалити, а потім яке
+//слово потрібно замінити. Після цього потрібно вивести масив у вигляді цільної фрази із
+//пробілами, використовуючи метод join().
+// const poem = ["Мороз", "и", "солнце", "день", "чудесный"];
+// let index = null;
+
+// do {
+//   index = prompt(`Vkajit index  slova ${poem} dlya zaminu (index z 1) `);
+//   if (index) {
+//     index = Number(index);
+//     let newWord = prompt(`Vedit Nove Slovo`);
+//     poem.splice(index - 1, 1, newWord);
+//     console.log(poem.join(" "));
+//   }
+// } while (index);
+
+//// Фібоначчі
+// Послідовність Фібоначчі - це ряд чисел, де кожне наступне є
+// сумою двох попередніх. Так, перші десять чисел виглядають так: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+// Постановка
+// Потрібно написати функцію, яка повертає n-ний запис у певній послідовності,
+// причому n - число, яке передається як аргумент функції.
+
+// function fibonacci(params) {
+//   let total = [0, 1];
+//   const ings = total.length;
+//   for (let i = 0; i < params - ings; i += 1) {
+//     total.push(total[i] + total[i + 1]);
+//   }
+//   return total;
+// }
+// console.log(fibonacci(10));
+
+//
+//// Зроби функцію, яка приймає масив будь-яких цілих чисел, що повертає новий масив,
+// Де всі елементи кратні п'яти. ([1,2,5,12,15,21] поверне [5,15])
+
+// function number(array = []) {
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] % 5 === 0) {
+//       newArray.push(array[i]);
+//     }
+//   }
+//   return newArray;
+// }
+// console.log(number([1, 2, 5, 12, 15, 21]));
